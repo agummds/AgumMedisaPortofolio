@@ -65,33 +65,84 @@ st.write("**Money Tracker App**")
 st.write("- Built financial tracking app using Google App Engine and Cloud Storage.")
 
 # Skills
-st.header("Skills")
-st.write("- **Hard Skills:** JavaScript, AWS, SQL, Git/GitHub, Cloud Computing (GCP)")
-st.write("- **Soft Skills:** Growth Mindset, Problem Solving, Critical Thinking, Time Management")
+st.markdown(
+    "<h2 style='text-align: center;'>Skilss</h2>",
+    unsafe_allow_html=True
+)
+empty_col1, col1, col2, empty_col2 = st.columns([1, 3, 3, 1])
+
+with col1:
+    st.subheader("💻 Hard Skills")
+    st.markdown("""
+    - JavaScript  
+    - AWS  
+    - SQL  
+    - Git/GitHub  
+    - Cloud Computing (GCP)  
+    """)
+
+with col2:
+    st.subheader("🧠 Soft Skills")
+    st.markdown("""
+    - Growth Mindset  
+    - Problem Solving  
+    - Critical Thinking  
+    - Time Management  
+    """)
 
 # Sertifikasi
-st.header("Certifications")
+st.markdown(
+    "<h2 style='text-align: center;'>Certifications</h2>",
+    unsafe_allow_html=True
+)
 
-col1, col2 = st.columns([1, 4])
-with col1:
-    st.image("https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/mtcna-300x150.png", width=50)
-with col2:
-    st.write("- MTCNA Certified")
+# Bikin empat kolom sejajar
+col1, col2, col3, col4 = st.columns(4)
 
-col1, col2 = st.columns([1, 4])
+# Kolom 1
 with col1:
-    st.image("https://th.bing.com/th/id/OIP.04A6c_tsuCs6rjh45RJ03QHaHa?rs=1&pid=ImgDetMain", width=50)
-with col2:
-    st.write("- Bangkit Academy Certificate")
+    st.markdown(
+        """
+        <div style='text-align: center;'>
+            <img src='https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/mtcna-300x150.png' width='100'>
+            <p>MTCNA Certified</p>
+        </div>
+        """, 
+        unsafe_allow_html=True
+    )
 
-col1, col2 = st.columns([1, 4])
-with col1:
-    st.image("https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/ACA.avif", width=50)
+# Kolom 2
 with col2:
-    st.write("- Alibaba Cloud Database Certified")
+    st.markdown(
+        """
+        <div style='text-align: center;'>
+            <img src='https://th.bing.com/th/id/OIP.04A6c_tsuCs6rjh45RJ03QHaHa?rs=1&pid=ImgDetMain' width='100'>
+            <p>Bangkit Academy Certificate</p>
+        </div>
+        """, 
+        unsafe_allow_html=True
+    )
 
-col1, col2 = st.columns([1, 4])
-with col1:
-    st.image("https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/aws.png", width=50)
-with col2:
-    st.write("- AWS Certified Cloud Practitioner")
+# Kolom 3
+with col3:
+    st.markdown(
+        """
+        <div style='text-align: center;'>
+            <img src='https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/ACA.avif' width='100'>
+            <p>Alibaba Cloud Database Certified</p>
+        </div>
+        """, 
+        unsafe_allow_html=True
+    )
+
+# Kolom 4
+with col4:
+    st.markdown(
+        """
+        <div style='text-align: center;'>
+            <img src='https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/aws.png' width='100'>
+            <p>AWS Certified Cloud Practitioner</p>
+        </div>
+        """, 
+        unsafe_allow_html=True
+    )
