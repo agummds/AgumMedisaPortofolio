@@ -11,8 +11,12 @@ st.markdown("""
 # Informasi Pribadi
 st.title("Agum Medisa")
 st.write("Padang, West Sumatera")
-st.write("📧 medisaagum@gmail.com")
-st.write("[LinkedIn](https://www.linkedin.com/in/agummedisa)")
+
+col1, col2 = st.columns([1,2])
+with col1:
+    st.write("📧 medisaagum@gmail.com")
+with col2:
+    st.write("[LinkedIn](https://www.linkedin.com/in/agummedisa)")
 
 # Summary
 st.header("Summary")
@@ -65,30 +69,49 @@ st.write("**Money Tracker App**")
 st.write("- Built financial tracking app using Google App Engine and Cloud Storage.")
 
 # Skills
+st.markdown("<h2 style='text-align: center;'>Skills</h2>", unsafe_allow_html=True)
+empty_col1, col1, col2, empty_col2 = st.columns([1, 3, 3, 1])
+
 st.markdown(
-    "<h2 style='text-align: center;'>Skilss</h2>",
+    """
+    <style>
+        .skill-item {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .skill-item:hover {
+            color: #0077b5; 
+            font-weight: bold;
+            transform: scale(1.05); 
+            cursor: pointer;
+        }
+    </style>
+    """,
     unsafe_allow_html=True
 )
-empty_col1, col1, col2, empty_col2 = st.columns([1, 3, 3, 1])
 
 with col1:
     st.subheader("💻 Hard Skills")
     st.markdown("""
-    - JavaScript  
-    - AWS  
-    - SQL  
-    - Git/GitHub  
-    - Cloud Computing (GCP)  
-    """)
+    <ul>
+        <li class='skill-item'>JavaScript</li>
+        <li class='skill-item'>AWS</li>
+        <li class='skill-item'>SQL</li>
+        <li class='skill-item'>Git/GitHub</li>
+        <li class='skill-item'>Cloud Computing (GCP)</li>
+    </ul>
+    """, unsafe_allow_html=True)
 
 with col2:
     st.subheader("🧠 Soft Skills")
     st.markdown("""
-    - Growth Mindset  
-    - Problem Solving  
-    - Critical Thinking  
-    - Time Management  
-    """)
+    <ul>
+        <li class='skill-item'>Growth Mindset</li>
+        <li class='skill-item'>Problem Solving</li>
+        <li class='skill-item'>Critical Thinking</li>
+        <li class='skill-item'>Time Management</li>
+    </ul>
+    """, unsafe_allow_html=True)
 
 # Sertifikasi
 st.markdown(
@@ -104,7 +127,7 @@ with col1:
     st.markdown(
         """
         <div style='text-align: center;'>
-            <img src='https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/mtcna-300x150.png' width='100'>
+            <img src='https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/mtcna-300x150.png' width='200'>
             <p>MTCNA Certified</p>
         </div>
         """, 
