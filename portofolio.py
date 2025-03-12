@@ -74,7 +74,7 @@ st.header("Certifications")
 
 col1, col2 = st.columns([1, 4])
 with col1:
-    st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mtut.pk%2Fproduct%2Fmikrotik-certified-network-associate-mtcna%2F&psig=AOvVaw3RkCrauFgfQo2j-RHVZAqy&ust=1741905641817000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCODO26rOhYwDFQAAAAAdAAAAABAI", width=50)
+    st.image("https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/mtcna-300x150.png", width=50)
 with col2:
     st.write("- MTCNA Certified")
 
@@ -86,12 +86,12 @@ with col2:
 
 col1, col2 = st.columns([1, 4])
 with col1:
-    st.image("alibaba_logo.png", width=50)
+    st.image("https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/ACA.avif", width=50)
 with col2:
     st.write("- Alibaba Cloud Database Certified")
 
 col1, col2 = st.columns([1, 4])
 with col1:
-    st.image("https://th.bing.com/th/id/OIP.Q-L0PIwz6p9aK2hQ7Oh2WAAAAA?rs=1&pid=ImgDetMain", width=50)
+    st.image("https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/aws.png", width=50)
 with col2:
     st.write("- AWS Certified Cloud Practitioner")
