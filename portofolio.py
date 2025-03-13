@@ -92,6 +92,7 @@ st.markdown(
             font-weight: normal;
             cursor: pointer;
             padding-bottom: 2px;
+            margin-bottom: 16px;
         }
 
         .custom-header::after {
@@ -132,50 +133,44 @@ st.markdown(
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+        .custom-header-container {
+            text-align: center; /* Pusatkan teks */
+        }
+
         .custom-header {
             position: relative;
-            display: inline-block;
+            display: inline-block; /* Ukuran elemen hanya selebar teks */
             font-size: 24px;
-            font-family: 'Poppins', sans-serif; /* Ganti font di sini */
+            font-family: 'Poppins', sans-serif;
             font-weight: normal;
             cursor: pointer;
             padding-bottom: 2px;
+            margin-bottom: 16px;
         }
 
-        .custom-header::before,
         .custom-header::after {
             content: '';
             position: absolute;
-            width: 100%;
+            width: 100%; /* Lebar garis pas sama teks */
             height: 2px;
             background-color: black;
-            bottom: 0;
+            bottom: -4px; /* Geser garis biar pas */
+            left: 0; /* Mulai dari kiri elemen */
+            transform: scaleX(1); /* Garis awal penuh */
             transition: transform 0.3s ease-in-out;
         }
 
-        .custom-header::before {
-            left: 0;
-            transform: scaleX(1);
-        }
-
-        .custom-header::after {
-            right: 0;
-            transform: scaleX(1);
-        }
-
-        .custom-header:hover::before {
-            transform: scaleX(0);
-        }
-
         .custom-header:hover::after {
-            transform: scaleX(0);
+            transform: scaleX(0); /* Garis menghilang saat hover */
         }
 
         .custom-header:hover {
             font-weight: bold;
         }
     </style>
-    <h2 class='custom-header'>Education</h2>
+    <div class='custom-header-container'>
+        <h2 class='custom-header'>Education</h2>
+    </div>
     """,
     unsafe_allow_html=True
 )
@@ -189,50 +184,44 @@ st.markdown(
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+        .custom-header-container {
+            text-align: center; /* Pusatkan teks */
+        }
+
         .custom-header {
             position: relative;
-            display: inline-block;
+            display: inline-block; /* Ukuran elemen hanya selebar teks */
             font-size: 24px;
-            font-family: 'Poppins', sans-serif; /* Ganti font di sini */
+            font-family: 'Poppins', sans-serif;
             font-weight: normal;
             cursor: pointer;
             padding-bottom: 2px;
+            margin-bottom: 16px;
         }
 
-        .custom-header::before,
         .custom-header::after {
             content: '';
             position: absolute;
-            width: 100%;
+            width: 100%; /* Lebar garis pas sama teks */
             height: 2px;
             background-color: black;
-            bottom: 0;
+            bottom: -4px; /* Geser garis biar pas */
+            left: 0; /* Mulai dari kiri elemen */
+            transform: scaleX(1); /* Garis awal penuh */
             transition: transform 0.3s ease-in-out;
         }
 
-        .custom-header::before {
-            left: 0;
-            transform: scaleX(1);
-        }
-
-        .custom-header::after {
-            right: 0;
-            transform: scaleX(1);
-        }
-
-        .custom-header:hover::before {
-            transform: scaleX(0);
-        }
-
         .custom-header:hover::after {
-            transform: scaleX(0);
+            transform: scaleX(0); /* Garis menghilang saat hover */
         }
 
         .custom-header:hover {
             font-weight: bold;
         }
     </style>
-    <h2 class='custom-header'>Experience</h2>
+    <div class='custom-header-container'>
+        <h2 class='custom-header'>Experience</h2>
+    </div>
     """,
     unsafe_allow_html=True
 )
@@ -267,50 +256,44 @@ st.markdown(
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+        .custom-header-container {
+            text-align: center; /* Pusatkan teks */
+        }
+
         .custom-header {
             position: relative;
-            display: inline-block;
+            display: inline-block; /* Ukuran elemen hanya selebar teks */
             font-size: 24px;
-            font-family: 'Poppins', sans-serif; /* Ganti font di sini */
+            font-family: 'Poppins', sans-serif;
             font-weight: normal;
             cursor: pointer;
             padding-bottom: 2px;
+            margin-bottom: 16px;
         }
 
-        .custom-header::before,
         .custom-header::after {
             content: '';
             position: absolute;
-            width: 100%;
+            width: 100%; /* Lebar garis pas sama teks */
             height: 2px;
             background-color: black;
-            bottom: 0;
+            bottom: -4px; /* Geser garis biar pas */
+            left: 0; /* Mulai dari kiri elemen */
+            transform: scaleX(1); /* Garis awal penuh */
             transition: transform 0.3s ease-in-out;
         }
 
-        .custom-header::before {
-            left: 0;
-            transform: scaleX(1);
-        }
-
-        .custom-header::after {
-            right: 0;
-            transform: scaleX(1);
-        }
-
-        .custom-header:hover::before {
-            transform: scaleX(0);
-        }
-
         .custom-header:hover::after {
-            transform: scaleX(0);
+            transform: scaleX(0); /* Garis menghilang saat hover */
         }
 
         .custom-header:hover {
             font-weight: bold;
         }
     </style>
-    <h2 class='custom-header'>Projects</h2>
+    <div class='custom-header-container'>
+        <h2 class='custom-header'>Projects</h2>
+    </div>
     """,
     unsafe_allow_html=True
 )
@@ -334,15 +317,41 @@ empty_col1, col1, col2, empty_col2 = st.columns([1, 3, 3, 1])
 st.markdown(
     """
     <style>
-        .skill-item {
-            transition: all 0.3s ease-in-out;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        .custom-header-container {
+            text-align: center; /* Pusatkan teks */
         }
 
-        .skill-item:hover {
-            color: #0077b5;
-            font-weight: bold;
-            transform: scale(1.05);
+        .custom-header {
+            position: relative;
+            display: inline-block; /* Ukuran elemen hanya selebar teks */
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: normal;
             cursor: pointer;
+            padding-bottom: 2px;
+            margin-bottom: 16px;
+        }
+
+        .custom-header::after {
+            content: '';
+            position: absolute;
+            width: 100%; /* Lebar garis pas sama teks */
+            height: 2px;
+            background-color: black;
+            bottom: -4px; /* Geser garis biar pas */
+            left: 0; /* Mulai dari kiri elemen */
+            transform: scaleX(1); /* Garis awal penuh */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .custom-header:hover::after {
+            transform: scaleX(0); /* Garis menghilang saat hover */
+        }
+
+        .custom-header:hover {
+            font-weight: bold;
         }
     </style>
     """,
@@ -379,55 +388,50 @@ st.markdown(
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+        .custom-header-container {
+            text-align: center; /* Pusatkan teks */
+        }
+
         .custom-header {
             position: relative;
-            display: inline-block;
+            display: inline-block; /* Ukuran elemen hanya selebar teks */
             font-size: 24px;
-            font-family: 'Poppins', sans-serif; /* Ganti font di sini */
+            font-family: 'Poppins', sans-serif;
             font-weight: normal;
             cursor: pointer;
             padding-bottom: 2px;
+            margin-bottom: 16px;
         }
 
-        .custom-header::before,
         .custom-header::after {
             content: '';
             position: absolute;
-            width: 100%;
+            width: 100%; /* Lebar garis pas sama teks */
             height: 2px;
             background-color: black;
-            bottom: 0;
+            bottom: -4px; /* Geser garis biar pas */
+            left: 0; /* Mulai dari kiri elemen */
+            transform: scaleX(1); /* Garis awal penuh */
             transition: transform 0.3s ease-in-out;
         }
 
-        .custom-header::before {
-            left: 0;
-            transform: scaleX(1);
-        }
-
-        .custom-header::after {
-            right: 0;
-            transform: scaleX(1);
-        }
-
-        .custom-header:hover::before {
-            transform: scaleX(0);
-        }
-
         .custom-header:hover::after {
-            transform: scaleX(0);
+            transform: scaleX(0); /* Garis menghilang saat hover */
         }
 
         .custom-header:hover {
             font-weight: bold;
         }
     </style>
-    <h2 class='custom-header' style='text-align: center;'>Certifications</h2>""",
+    <div class='custom-header-container'>
+        <h2 class='custom-header'>Certification</h2>
+    </div>
+    """,
     unsafe_allow_html=True
 )
 
-# Bikin empat kolom sejajar
-col1, col2, col3, col4, col5= st.columns(5)
+# Baris pertama: Empat kolom sejajar
+col1, col2, col3, col4 = st.columns(4)
 
 # Kolom 1
 with col1:
@@ -477,14 +481,13 @@ with col4:
         unsafe_allow_html=True
     )
 
-# Kolom 5
-with col5:
-    st.markdown(
-        """
-        <div style='text-align: center;'>
-            <img src='https://www.credly.com/badges/d2e8eddc-dbe8-4e2e-9c7a-ba00a5210a2b/public_url' width='100'>
-            <p>IT Specialist - Python</p>
-        </div>
-        """, 
-        unsafe_allow_html=True
+# Baris kedua: Satu kolom di tengah
+col_left, col_center, col_right = st.columns([2, 1, 2])
+
+# Kolom 5 (di tengah)
+with col_center:
+    st.image(
+        "https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/ITS-Badges_Python_1200px.png",
+        caption="IT Specialist - Python",
+        width=100
     )
