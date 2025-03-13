@@ -1,22 +1,9 @@
 import streamlit as st
 
+dark_mode = st.toggle("Dark Mode", value=False)
 
-# Cek apakah ada session state untuk mode tema
-if 'dark_mode' not in st.session_state:
-    st.session_state.dark_mode = False
-
-# Tombol untuk mengubah mode
-if st.button("Toggle Dark Mode"):
-    st.session_state.dark_mode = not st.session_state.dark_mode
-
-# Atur warna berdasarkan mode
-if st.session_state.dark_mode:
-    bg_color = "#000000"  # Hitam
-    text_color = "#FFFFFF"  # Putih
-else:
-    bg_color = "#FFFFFF"  # Putih
-    text_color = "#000000"  # Hitam
-
+bg_color = "#000000" if dark_mode else "#FFFFFF"
+text_color = "#FFFFFF" if dark_mode else "#000000"
 
 # Styling untuk background putih
 st.markdown("""
