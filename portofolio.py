@@ -8,15 +8,76 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Informasi Pribadi
-st.title("Agum Medisa")
-st.write("Padang, West Sumatera")
+# Styling untuk foto profil
+st.markdown(
+    """
+    <style>
+        .profile-pic {
+            display: block;
+            border-radius: 50%; /* Bikin foto jadi bulat */
+            width: 150px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
 
-col1, col2 = st.columns([1,2])
+        .profile-pic:hover {
+            transform: scale(1.1); /* Foto jadi sedikit membesar */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Bikin dua kolom: Foto di kiri, info di kanan
+col1, col2 = st.columns([1, 2])
+
 with col1:
-    st.write("📧 medisaagum@gmail.com")
+    st.markdown(
+        """
+        <img src='./image/agum.jpg' 
+             alt='Profile Picture' 
+             class='profile-pic'/>
+        """,
+        unsafe_allow_html=True
+    )
+
 with col2:
-    st.write("[LinkedIn](https://www.linkedin.com/in/agummedisa)")
+    st.title("Agum Medisa")
+    st.write("Padang, West Sumatera")
+
+    # Email dengan ikon
+    st.markdown(
+        """
+        <div style='display: flex; align-items: center;'>
+            <img src='https://cdn-icons-png.flaticon.com/512/732/732200.png' width='20' style='margin-right: 8px;'/>
+            <span>medisaagum@gmail.com</span>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    # LinkedIn dengan ikon + custom warna link
+    st.markdown(
+        """
+        <style>
+            .custom-link {
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .custom-link:hover {
+                text-decoration: underline;
+            }
+        </style>
+        <div style='display: flex; align-items: center;'>
+            <img src='https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png' width='20' style='margin-right: 8px;'/>
+            <a href='https://www.linkedin.com/in/agummedisa' target='_blank' class='custom-link'>LinkedIn Profile</a>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+
 
 # Summary
 st.header("Summary")
