@@ -34,9 +34,7 @@ col1, col2 = st.columns([1, 2])
 with col1:
     st.markdown(
         """
-        <img src='./image/agum.jpg' 
-             alt='Profile Picture' 
-             class='profile-pic'/>
+            <img src='https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/agum.jpg' width='400'>
         """,
         unsafe_allow_html=True
     )
@@ -77,21 +75,167 @@ with col2:
         unsafe_allow_html=True
     )
 
+st.markdown(
+    """
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        .custom-header-container {
+            text-align: center; /* Pusatkan teks */
+        }
+
+        .custom-header {
+            position: relative;
+            display: inline-block; /* Ukuran elemen hanya selebar teks */
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: normal;
+            cursor: pointer;
+            padding-bottom: 2px;
+        }
+
+        .custom-header::after {
+            content: '';
+            position: absolute;
+            width: 100%; /* Lebar garis pas sama teks */
+            height: 2px;
+            background-color: black;
+            bottom: -4px; /* Geser garis biar pas */
+            left: 0; /* Mulai dari kiri elemen */
+            transform: scaleX(1); /* Garis awal penuh */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .custom-header:hover::after {
+            transform: scaleX(0); /* Garis menghilang saat hover */
+        }
+
+        .custom-header:hover {
+            font-weight: bold;
+        }
+    </style>
+    <div class='custom-header-container'>
+        <h2 class='custom-header'>Summary</h2>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 
-# Summary
-st.header("Summary")
 st.write("Final-year Computer Engineering student passionate about Cloud Engineering and Software Development.")
 st.write("Gained hands-on experience in cloud computing and networking through the Bangkit Academy program.")
 st.write("AWS & Alibaba Cloud certified, with expertise in cloud technology and a strong drive to solve real-world tech challenges.")
 
 # Pendidikan
-st.header("Education")
+st.markdown(
+    """
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        .custom-header {
+            position: relative;
+            display: inline-block;
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif; /* Ganti font di sini */
+            font-weight: normal;
+            cursor: pointer;
+            padding-bottom: 2px;
+        }
+
+        .custom-header::before,
+        .custom-header::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            bottom: 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .custom-header::before {
+            left: 0;
+            transform: scaleX(1);
+        }
+
+        .custom-header::after {
+            right: 0;
+            transform: scaleX(1);
+        }
+
+        .custom-header:hover::before {
+            transform: scaleX(0);
+        }
+
+        .custom-header:hover::after {
+            transform: scaleX(0);
+        }
+
+        .custom-header:hover {
+            font-weight: bold;
+        }
+    </style>
+    <h2 class='custom-header'>Education</h2>
+    """,
+    unsafe_allow_html=True
+)
+
 st.write("**Andalas University** - Computer Engineering Student (July 2021 - Present)")
 st.write("Active student with experience in computer networks, embedded systems, and cloud computing.")
 
 # Pengalaman
-st.header("Experience")
+st.markdown(
+    """
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        .custom-header {
+            position: relative;
+            display: inline-block;
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif; /* Ganti font di sini */
+            font-weight: normal;
+            cursor: pointer;
+            padding-bottom: 2px;
+        }
+
+        .custom-header::before,
+        .custom-header::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            bottom: 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .custom-header::before {
+            left: 0;
+            transform: scaleX(1);
+        }
+
+        .custom-header::after {
+            right: 0;
+            transform: scaleX(1);
+        }
+
+        .custom-header:hover::before {
+            transform: scaleX(0);
+        }
+
+        .custom-header:hover::after {
+            transform: scaleX(0);
+        }
+
+        .custom-header:hover {
+            font-weight: bold;
+        }
+    </style>
+    <h2 class='custom-header'>Experience</h2>
+    """,
+    unsafe_allow_html=True
+)
 
 col1, col2 = st.columns([1, 4])
 with col1:
@@ -118,7 +262,59 @@ with col2:
     st.write("- Developed proficiency in GCP cloud services and built web applications.")
 
 # Proyek
-st.header("Projects")
+st.markdown(
+    """
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        .custom-header {
+            position: relative;
+            display: inline-block;
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif; /* Ganti font di sini */
+            font-weight: normal;
+            cursor: pointer;
+            padding-bottom: 2px;
+        }
+
+        .custom-header::before,
+        .custom-header::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            bottom: 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .custom-header::before {
+            left: 0;
+            transform: scaleX(1);
+        }
+
+        .custom-header::after {
+            right: 0;
+            transform: scaleX(1);
+        }
+
+        .custom-header:hover::before {
+            transform: scaleX(0);
+        }
+
+        .custom-header:hover::after {
+            transform: scaleX(0);
+        }
+
+        .custom-header:hover {
+            font-weight: bold;
+        }
+    </style>
+    <h2 class='custom-header'>Projects</h2>
+    """,
+    unsafe_allow_html=True
+)
+
 st.write("**Web Server Building Project**")
 st.write("- Scalable web server architecture with NGINX and Node.js backend.")
 st.write("- Automated CI/CD pipeline with GitHub Actions & Docker.")
@@ -130,7 +326,9 @@ st.write("**Money Tracker App**")
 st.write("- Built financial tracking app using Google App Engine and Cloud Storage.")
 
 # Skills
-st.markdown("<h2 style='text-align: center;'>Skills</h2>", unsafe_allow_html=True)
+
+# Skills
+st.markdown("<h2 class='custom-header'>Skills</h2>", unsafe_allow_html=True)
 empty_col1, col1, col2, empty_col2 = st.columns([1, 3, 3, 1])
 
 st.markdown(
@@ -141,9 +339,9 @@ st.markdown(
         }
 
         .skill-item:hover {
-            color: #0077b5; 
+            color: #0077b5;
             font-weight: bold;
-            transform: scale(1.05); 
+            transform: scale(1.05);
             cursor: pointer;
         }
     </style>
@@ -154,7 +352,7 @@ st.markdown(
 with col1:
     st.subheader("💻 Hard Skills")
     st.markdown("""
-    <ul>
+    <ul style='text-align: left;'>
         <li class='skill-item'>JavaScript</li>
         <li class='skill-item'>AWS</li>
         <li class='skill-item'>SQL</li>
@@ -166,7 +364,7 @@ with col1:
 with col2:
     st.subheader("🧠 Soft Skills")
     st.markdown("""
-    <ul>
+    <ul style='text-align: left;'>
         <li class='skill-item'>Growth Mindset</li>
         <li class='skill-item'>Problem Solving</li>
         <li class='skill-item'>Critical Thinking</li>
@@ -175,13 +373,61 @@ with col2:
     """, unsafe_allow_html=True)
 
 # Sertifikasi
+
 st.markdown(
-    "<h2 style='text-align: center;'>Certifications</h2>",
+    """
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        .custom-header {
+            position: relative;
+            display: inline-block;
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif; /* Ganti font di sini */
+            font-weight: normal;
+            cursor: pointer;
+            padding-bottom: 2px;
+        }
+
+        .custom-header::before,
+        .custom-header::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            bottom: 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .custom-header::before {
+            left: 0;
+            transform: scaleX(1);
+        }
+
+        .custom-header::after {
+            right: 0;
+            transform: scaleX(1);
+        }
+
+        .custom-header:hover::before {
+            transform: scaleX(0);
+        }
+
+        .custom-header:hover::after {
+            transform: scaleX(0);
+        }
+
+        .custom-header:hover {
+            font-weight: bold;
+        }
+    </style>
+    <h2 class='custom-header' style='text-align: center;'>Certifications</h2>""",
     unsafe_allow_html=True
 )
 
 # Bikin empat kolom sejajar
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3, col4, col5= st.columns(5)
 
 # Kolom 1
 with col1:
@@ -226,6 +472,18 @@ with col4:
         <div style='text-align: center;'>
             <img src='https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/aws.png' width='100'>
             <p>AWS Certified Cloud Practitioner</p>
+        </div>
+        """, 
+        unsafe_allow_html=True
+    )
+
+# Kolom 5
+with col5:
+    st.markdown(
+        """
+        <div style='text-align: center;'>
+            <img src='https://www.credly.com/badges/d2e8eddc-dbe8-4e2e-9c7a-ba00a5210a2b/public_url' width='100'>
+            <p>IT Specialist - Python</p>
         </div>
         """, 
         unsafe_allow_html=True
