@@ -104,101 +104,55 @@ with col2:
         unsafe_allow_html=True
     )
 
+# Bagian Summary
+
 st.markdown(
     """
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
         .custom-header-container {
-            text-align: center; /* Pusatkan teks */
+            text-align: center;
         }
 
         .custom-header {
-            position: relative;
-            display: inline-block; /* Ukuran elemen hanya selebar teks */
             font-size: 24px;
             font-family: 'Poppins', sans-serif;
-            font-weight: normal;
-            cursor: pointer;
-            padding-bottom: 2px;
+            font-weight: 400;
+            color: white; /* Warna teks putih */
             margin-bottom: 16px;
-        }
-
-        .custom-header::after {
-            content: '';
-            position: absolute;
-            width: 100%; /* Lebar garis pas sama teks */
-            height: 2px;
-            background-color: black;
-            bottom: -4px; /* Geser garis biar pas */
-            left: 0; /* Mulai dari kiri elemen */
-            transform: scaleX(1); /* Garis awal penuh */
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .custom-header:hover::after {
-            transform: scaleX(0); /* Garis menghilang saat hover */
-        }
-
-        .custom-header:hover {
-            font-weight: bold;
+            text-decoration: none; /* Menghapus underline */
         }
     </style>
     <div class='custom-header-container'>
-        <h2 class='custom-header'>Summary</h2>
+        <div class='custom-header'>Summary</div>
     </div>
     """,
     unsafe_allow_html=True
 )
 
-
 st.write("Final-year Computer Engineering student passionate about Cloud Engineering and Software Development.")
 st.write("Gained hands-on experience in cloud computing and networking through the Bangkit Academy program.")
 st.write("AWS & Alibaba Cloud certified, with expertise in cloud technology and a strong drive to solve real-world tech challenges.")
+
 
 # Pendidikan
 st.markdown(
     """
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
         .custom-header-container {
-            text-align: center; /* Pusatkan teks */
+            text-align: center;
         }
 
         .custom-header {
-            position: relative;
-            display: inline-block; /* Ukuran elemen hanya selebar teks */
             font-size: 24px;
             font-family: 'Poppins', sans-serif;
-            font-weight: normal;
-            cursor: pointer;
-            padding-bottom: 2px;
+            font-weight: 400;
+            color: white; /* Warna teks putih */
             margin-bottom: 16px;
-        }
-
-        .custom-header::after {
-            content: '';
-            position: absolute;
-            width: 100%; /* Lebar garis pas sama teks */
-            height: 2px;
-            background-color: black;
-            bottom: -4px; /* Geser garis biar pas */
-            left: 0; /* Mulai dari kiri elemen */
-            transform: scaleX(1); /* Garis awal penuh */
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .custom-header:hover::after {
-            transform: scaleX(0); /* Garis menghilang saat hover */
-        }
-
-        .custom-header:hover {
-            font-weight: bold;
+            text-decoration: none; /* Menghapus underline */
         }
     </style>
     <div class='custom-header-container'>
-        <h2 class='custom-header'>Education</h2>
+        <div class='custom-header'>Education</div>
     </div>
     """,
     unsafe_allow_html=True
@@ -211,45 +165,21 @@ st.write("Active student with experience in computer networks, embedded systems,
 st.markdown(
     """
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
         .custom-header-container {
-            text-align: center; /* Pusatkan teks */
+            text-align: center;
         }
 
         .custom-header {
-            position: relative;
-            display: inline-block; /* Ukuran elemen hanya selebar teks */
             font-size: 24px;
             font-family: 'Poppins', sans-serif;
-            font-weight: normal;
-            cursor: pointer;
-            padding-bottom: 2px;
+            font-weight: 400;
+            color: white; /* Warna teks putih */
             margin-bottom: 16px;
-        }
-
-        .custom-header::after {
-            content: '';
-            position: absolute;
-            width: 100%; /* Lebar garis pas sama teks */
-            height: 2px;
-            background-color: black;
-            bottom: -4px; /* Geser garis biar pas */
-            left: 0; /* Mulai dari kiri elemen */
-            transform: scaleX(1); /* Garis awal penuh */
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .custom-header:hover::after {
-            transform: scaleX(0); /* Garis menghilang saat hover */
-        }
-
-        .custom-header:hover {
-            font-weight: bold;
+            text-decoration: none; /* Menghapus underline */
         }
     </style>
     <div class='custom-header-container'>
-        <h2 class='custom-header'>Experience</h2>
+        <div class='custom-header'>Experience</div>
     </div>
     """,
     unsafe_allow_html=True
@@ -283,45 +213,21 @@ with col2:
 st.markdown(
     """
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
         .custom-header-container {
-            text-align: center; /* Pusatkan teks */
+            text-align: center;
         }
 
         .custom-header {
-            position: relative;
-            display: inline-block; /* Ukuran elemen hanya selebar teks */
             font-size: 24px;
             font-family: 'Poppins', sans-serif;
-            font-weight: normal;
-            cursor: pointer;
-            padding-bottom: 2px;
+            font-weight: 400;
+            color: white; /* Warna teks putih */
             margin-bottom: 16px;
-        }
-
-        .custom-header::after {
-            content: '';
-            position: absolute;
-            width: 100%; /* Lebar garis pas sama teks */
-            height: 2px;
-            background-color: black;
-            bottom: -4px; /* Geser garis biar pas */
-            left: 0; /* Mulai dari kiri elemen */
-            transform: scaleX(1); /* Garis awal penuh */
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .custom-header:hover::after {
-            transform: scaleX(0); /* Garis menghilang saat hover */
-        }
-
-        .custom-header:hover {
-            font-weight: bold;
+            text-decoration: none; /* Menghapus underline */
         }
     </style>
     <div class='custom-header-container'>
-        <h2 class='custom-header'>Projects</h2>
+        <div class='custom-header'>Projects</div>
     </div>
     """,
     unsafe_allow_html=True
@@ -338,54 +244,30 @@ st.write("**Money Tracker App**")
 st.write("- Built financial tracking app using Google App Engine and Cloud Storage.")
 
 # Skills
-
-# Skills
-st.markdown("<h2 class='custom-header'>Skills</h2>", unsafe_allow_html=True)
-empty_col1, col1, col2, empty_col2 = st.columns([1, 3, 3, 1])
-
 st.markdown(
     """
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
         .custom-header-container {
-            text-align: center; /* Pusatkan teks */
+            text-align: center;
         }
 
         .custom-header {
-            position: relative;
-            display: inline-block; /* Ukuran elemen hanya selebar teks */
             font-size: 24px;
             font-family: 'Poppins', sans-serif;
-            font-weight: normal;
-            cursor: pointer;
-            padding-bottom: 2px;
+            font-weight: 400;
+            color: white; /* Warna teks putih */
             margin-bottom: 16px;
-        }
-
-        .custom-header::after {
-            content: '';
-            position: absolute;
-            width: 100%; /* Lebar garis pas sama teks */
-            height: 2px;
-            background-color: black;
-            bottom: -4px; /* Geser garis biar pas */
-            left: 0; /* Mulai dari kiri elemen */
-            transform: scaleX(1); /* Garis awal penuh */
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .custom-header:hover::after {
-            transform: scaleX(0); /* Garis menghilang saat hover */
-        }
-
-        .custom-header:hover {
-            font-weight: bold;
+            text-decoration: none; /* Menghapus underline */
         }
     </style>
+    <div class='custom-header-container'>
+        <div class='custom-header'>Skills</div>
+    </div>
     """,
     unsafe_allow_html=True
 )
+
+empty_col1, col1, col2, empty_col2 = st.columns([1, 3, 3, 1])
 
 with col1:
     st.subheader("💻 Hard Skills")
@@ -415,49 +297,26 @@ with col2:
 st.markdown(
     """
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
         .custom-header-container {
-            text-align: center; /* Pusatkan teks */
+            text-align: center;
         }
 
         .custom-header {
-            position: relative;
-            display: inline-block; /* Ukuran elemen hanya selebar teks */
             font-size: 24px;
             font-family: 'Poppins', sans-serif;
-            font-weight: normal;
-            cursor: pointer;
-            padding-bottom: 2px;
+            font-weight: 600;
+            color: white; /* Warna teks putih */
             margin-bottom: 16px;
-        }
-
-        .custom-header::after {
-            content: '';
-            position: absolute;
-            width: 100%; /* Lebar garis pas sama teks */
-            height: 2px;
-            background-color: black;
-            bottom: -4px; /* Geser garis biar pas */
-            left: 0; /* Mulai dari kiri elemen */
-            transform: scaleX(1); /* Garis awal penuh */
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .custom-header:hover::after {
-            transform: scaleX(0); /* Garis menghilang saat hover */
-        }
-
-        .custom-header:hover {
-            font-weight: bold;
+            text-decoration: none; /* Menghapus underline */
         }
     </style>
     <div class='custom-header-container'>
-        <h2 class='custom-header'>Certification</h2>
+        <div class='custom-header'>Certification</div>
     </div>
     """,
     unsafe_allow_html=True
 )
+
 
 # Baris pertama: Empat kolom sejajar
 col1, col2, col3, col4 = st.columns(4)
