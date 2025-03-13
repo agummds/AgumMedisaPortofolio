@@ -319,7 +319,7 @@ st.markdown(
 
 
 # Baris pertama: Empat kolom sejajar
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3, col4, col5 = st.columns(5)
 
 # Kolom 1
 with col1:
@@ -368,14 +368,13 @@ with col4:
         """, 
         unsafe_allow_html=True
     )
-
-# Baris kedua: Satu kolom di tengah
-col_left, col_center, col_right = st.columns([2, 1, 2])
-
-# Kolom 5 (di tengah)
-with col_center:
-    st.image(
-        "https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/ITS-Badges_Python_1200px.png",
-        caption="IT Specialist - Python",
-        width=100
+with col5:
+    st.markdown(
+        """
+        <div style='text-align: center;'>
+            <img src='https://raw.githubusercontent.com/agummds/AgumMedisaPortofolio/master/image/ITS-Badges_Python_1200px.png' width='100'>
+            <p>IT Specialist - Python</p>
+        </div>
+        """, 
+        unsafe_allow_html=True
     )
