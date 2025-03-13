@@ -8,8 +8,32 @@ text_color = "#FFFFFF" if dark_mode else "#000000"
 # Styling untuk background putih
 st.markdown("""
     <style>
-        .main { background-color: #ffffff; }
-        h1, h2, h3, h4, h5, h6, p, div, span { color: #000000 !important; }
+        body, .main {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Mode Terang */
+        :root {
+            --bg-color: white;
+            --text-color: black;
+        }
+
+        /* Mode Gelap */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: black;
+                --text-color: white;
+            }
+        }
+
+        /* Terapkan ke seluruh halaman */
+        .main {
+            background-color: var(--bg-color) !important;
+        }
+
+        h1, h2, h3, h4, h5, h6, p, div, span {
+            color: var(--text-color) !important;
+        }
     </style>
 """, unsafe_allow_html=True)
 
